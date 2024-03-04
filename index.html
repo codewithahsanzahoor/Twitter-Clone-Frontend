@@ -2,15 +2,355 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<link rel="stylesheet" href="./css/output.css" />
 		<link
 			rel="stylesheet"
-			href="./css/output.css"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
 		/>
 	</head>
-	<body></body>
+
+	<body class="bg-black text-white">
+		<div
+			class="main flex items-center min-h-screen w-[85vw] mx-auto bg-black text-white"
+		>
+			<!-- ?left side bar -->
+			<div
+				class="first min-h-screen flex flex-col gap-8 w-[23rem] border-r border-white overflow-y-auto"
+			>
+				<div class="logo invert pt-4 px-3">
+					<svg
+						viewBox="0 0 24 24"
+						aria-hidden="true"
+						class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+					>
+						<g>
+							<path
+								d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+							></path>
+						</g>
+					</svg>
+				</div>
+				<div class="sidebar">
+					<span class="material-symbols-outlined">
+						<ul class="text-2xl text-white">
+							<li
+								class="hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="bi bi-house pr-2"></i> Home
+							</li>
+							<li
+								class="my-4 hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="pr-2 bi bi-search"></i>
+								Explore
+							</li>
+							<li
+								class="my-4 hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="pr-2 bi bi-bell"></i> Notifications
+							</li>
+							<li
+								class="my-4 hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="pr-2 bi bi-envelope-fill"></i>
+								Messages
+							</li>
+							<li
+								class="my-4 hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="pr-2 bi bi-forward"></i> Grok
+							</li>
+							<li
+								class="my-4 hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="pr-2 bi bi-card-list"></i> Lists
+							</li>
+							<li
+								class="my-4 hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="pr-2 bi bi-bookmark"></i> Bookmarks
+							</li>
+							<li
+								class="my-4 hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="pr-2 bi bi-people"></i> Communities
+							</li>
+							<li
+								class="my-4 hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="pr-2 bi bi-twitter-x"></i> Premium
+							</li>
+							<li
+								class="my-4 hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="pr-2 bi bi-person"></i> Profile
+							</li>
+							<li
+								class="my-4 hover:rounded-xl hover:cursor-pointer hover:ouline-white hover:outline w-fit px-2"
+							>
+								<i class="pr-2 bi bi-three-dots"></i> More
+							</li>
+						</ul>
+					</span>
+				</div>
+				<div class="btn w-[80%]">
+					<button class="btn py-4 border rounded-3xl w-full">
+						Post
+					</button>
+				</div>
+				<div class="contact relative bottom-0 flex flex-row pb-3">
+					<div class="img"></div>
+					<div class="two--text px-[40px]">
+						<p>Ahsan Zahoor</p>
+						<p>@ahsanZahoor50</p>
+					</div>
+					<i class="bi bi-three-dots"></i>
+				</div>
+			</div>
+			<!-- ?middle section -->
+			<div
+				class="second min-h-screen min-w-[40rem] border-r border-white overflow-y-auto"
+			>
+				<div class="flex justify-between items-center">
+					<div class="flex items-center justify-around py-3 w-[80%]">
+						<span>For you</span>
+						<span>Following</span>
+					</div>
+					<i class="bi bi-gear px-3"></i>
+				</div>
+
+				<div class="post-section w-[40vw] border-t border-white pt-3">
+					<div class="main flex space-x-2 px-4">
+						<div class="w-[10%]">
+							<img
+								src="https://th.bing.com/th/id/R.8a5e37fd95055877fef3305867196a50?rik=SIjRxlUtJAxcrQ&pid=ImgRaw&r=0"
+								alt="goggle"
+								class="rounded-full"
+							/>
+						</div>
+						<div class="text text-xs">
+							<span class="text-gray-400">Historic vids</span>
+							<span class="text-gray-400">@history memes</span>
+							<div>
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. A accusantium expedita
+								perspiciatis at, vel enim, quibusdam laborum
+								voluptates doloribus optio consequuntur animi
+								aliquam!
+							</div>
+							<div class="img mt-3">
+								<img
+									src="https://cdn.pixabay.com/photo/2016/08/17/01/39/mystery-1599527_1280.jpg"
+									alt=""
+									class="w-[90%] rounded-xl shadow-md hover:shadow-sm hover:shadow-gray-400 shadow-gray-800"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ?right side bar -->
+			<div class="third min-h-screen min-w-[25rem] overflow-y-auto">
+				<div class="search">
+					<div class="max-w-xs mx-auto rounded-lg px-[1px] py-2">
+						<div class="relative text-gray-600">
+							<div
+								class="absolute inset-y-0 left-0 flex items-center pl-3"
+							>
+								<svg
+									class="h-6 w-6 text-gray-400"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M21 21l-5.2-5.2M15 11a4 4 0 11-8 0 4 4 0 018 0z"
+									></path>
+								</svg>
+							</div>
+							<input
+								type="search"
+								name="search"
+								placeholder="Search"
+								class="w-full bg-gray-700 rounded-3xl pl-10 pr-4 py-2 focus:outline-none focus:border-blue-500"
+							/>
+						</div>
+					</div>
+				</div>
+
+				<div class="card flex justify-center items-center">
+					<div
+						class="bg-gray-900 text-white p-4 w-[23vw] rounded-2xl mt-3"
+					>
+						<h2 class="text-xl font-bold mb-2">What's happening</h2>
+						<div class="mb-4 flex gap-3">
+							<div class="">
+								<p class="text-xs">Menswear Fashion Weeks</p>
+								<p class="text-xs text-gray-600">
+									Fashion - LIVE
+								</p>
+							</div>
+							<div class="">
+								<img
+									src="https://i.ytimg.com/vi/8X9jJp5Dn6g/hqdefault.jpg"
+									class="w-120"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div class="mb-2">
+							<p>#MissileAttack</p>
+							<p class="text-xs text-gray-600">40.6K posts</p>
+						</div>
+						<div class="mb-2">
+							<p>Orry</p>
+							<p class="text-xs text-gray-600">3,000 posts</p>
+						</div>
+						<div class="mb-4">
+							<p>#MalavikaMohanan</p>
+							<p class="text-xs text-gray-600">1,844 posts</p>
+						</div>
+						<button class="text-blue-500 hover:underline">
+							Show more
+						</button>
+					</div>
+				</div>
+
+				<div class="underCard mt-3 flex justify-center items-center">
+					<div class="bg-gray-900 p-4 rounded-2xl w-[23vw]">
+						<div class="text-white text-xl font-bold mb-2">
+							Who to follow
+						</div>
+						<div class="flex flex-col space-y-2">
+							<div class="flex items-center space-x-4">
+								<img
+									class="w-12 h-12 rounded-full"
+									src="https://cdn.pixabay.com/photo/2017/12/17/08/12/girl-3023831_640.jpg"
+									alt="Profile 1"
+								/>
+
+								<div class="flex flex-col">
+									<div class="flex items-center space-x-1">
+										<div class="text-white font-medium">
+											John Doe
+										</div>
+										<div class="text-blue-400">
+											@johndoe
+										</div>
+									</div>
+									<div class="text-gray-400 text-sm">
+										Software Engineer
+									</div>
+								</div>
+								<button
+									class="bg-blue-500 hover:bg-blue-600 text-white py-1 rounded-full px-2"
+								>
+									Follow
+								</button>
+							</div>
+							<div class="flex items-center space-x-4">
+								<img
+									class="w-12 h-12 rounded-full"
+									src="https://cdn.pixabay.com/photo/2017/12/17/08/12/girl-3023831_640.jpg"
+									alt="Profile 2"
+								/>
+								<div class="flex flex-col">
+									<div class="flex items-center space-x-1">
+										<div class="text-white font-medium">
+											Jane Smith
+										</div>
+										<div class="text-blue-400">
+											@janesmith
+										</div>
+									</div>
+									<div class="text-gray-400 text-sm">
+										Web Designer
+									</div>
+								</div>
+								<button
+									class="bg-blue-500 hover:bg-blue-600 text-white py-1 rounded-full px-2"
+								>
+									Follow
+								</button>
+							</div>
+							<div class="flex items-center space-x-4">
+								<img
+									class="w-12 h-12 rounded-full"
+									src="https://cdn.pixabay.com/photo/2017/12/17/08/12/girl-3023831_640.jpg"
+									alt="Profile 3"
+								/>
+								<div class="flex flex-col">
+									<div class="flex items-center space-x-1">
+										<div class="text-white font-medium">
+											Bob Lee
+										</div>
+										<div class="text-blue-400">@boblee</div>
+									</div>
+									<div class="text-gray-400 text-sm">
+										Photographer
+									</div>
+								</div>
+								<button
+									class="bg-blue-500 hover:bg-blue-600 text-white py-1 rounded-full px-2"
+								>
+									Follow
+								</button>
+							</div>
+						</div>
+						<div class="text-blue-400 text-sm mt-2">Show more</div>
+					</div>
+				</div>
+
+				<div class="footer">
+					<footer class="text-white w-[80%] mx-auto rounded-2xl">
+						<div
+							class="flex flex-wrap justify-between items-center mt-2"
+						>
+							<div
+								class="flex justify-center items-center space-x-2 text-xs w-[100%]"
+							>
+								<a href="#" class="hover:underline ps-4"
+									>Terms of Service</a
+								>
+								<a href="#" class="hover:underline"
+									>Privacy Policy</a
+								>
+								<a href="#" class="hover:underline"
+									>Cookie Policy</a
+								>
+							</div>
+							<div
+								class="flex justify-center items-center space-x-2 text-xs w-[100%]"
+							>
+								<a href="#" class="hover:underline"
+									>Accessibility</a
+								>
+								<a href="#" class="hover:underline">Ads info</a>
+								<a href="#" class="hover:underline">More</a>
+								<a href="#" class="hover:underline"
+									>&copy; 2024 X corp</a
+								>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+			<!-- ? messageBar -->
+			<div
+				class="messageBar fixed bottom-0 right-4 min-w-[20vw] min-h-[5vh] bg-black border-t border-x shadow-md shadow-white border-white rounded-t-2xl flex justify-between items-center px-3"
+			>
+				<div class="mess">messages</div>
+				<div class="icons">
+					<i class="bi bi-arrow-up-short"></i>
+					<i class="bi bi-envelope-arrow-down-fill"></i>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
